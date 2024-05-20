@@ -1,10 +1,9 @@
-let likeNumber = document.getElementById("howmany") 
+let likeNumber = document.getElementById("skolko") 
 let text = document.getElementById("text"); 
 let post = document.getElementById("firstPost");  
 let postsBox = document.getElementById("postsBox")  
 let comment = document.getElementById("comment")  
 let comments = document.getElementById("comments")  
-let c=0; 
 let pic = [  
     "horror.jpg", 
     "treatb.jpg",
@@ -23,6 +22,7 @@ for(let a = 1; a < 97; a++){
     imgpost.setAttribute("src", pic[i%3])  
     postsBox.appendChild(newpost);  
 } 
+let c=0;
 function like(){ 
     c++ 
     likeNumber.innerHTML = c 
